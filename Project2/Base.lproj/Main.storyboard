@@ -17,6 +17,9 @@
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zO-bQ-lBI">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7zO-bQ-lBI" secondAttribute="height" multiplier="2:1" id="LC0-rq-CH0"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1IA-1I-KT4"/>
@@ -24,6 +27,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEq-MZ-sFL">
                                 <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EEq-MZ-sFL" secondAttribute="height" multiplier="2:1" id="Eeg-Bp-tVB"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mlc-8k-0Hw"/>
@@ -31,6 +37,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pv-QL-twf">
                                 <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7pv-QL-twf" secondAttribute="height" multiplier="2:1" id="fKa-Gx-XMK"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ym-Fk-AQJ"/>
@@ -48,11 +57,14 @@
                             <constraint firstItem="C4y-bd-jNw" firstAttribute="top" secondItem="EEq-MZ-sFL" secondAttribute="bottom" constant="35" id="765-jI-j3D"/>
                             <constraint firstItem="C4y-bd-jNw" firstAttribute="centerX" secondItem="EEq-MZ-sFL" secondAttribute="centerX" id="EqM-Oa-CoK"/>
                             <constraint firstItem="7zO-bQ-lBI" firstAttribute="centerX" secondItem="7pv-QL-twf" secondAttribute="centerX" id="NdX-9N-x2n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EEq-MZ-sFL" secondAttribute="bottom" constant="20" id="OFn-0f-9f5"/>
                             <constraint firstItem="EEq-MZ-sFL" firstAttribute="top" secondItem="7zO-bQ-lBI" secondAttribute="bottom" constant="30" id="QAW-Dt-W34"/>
+                            <constraint firstItem="EEq-MZ-sFL" firstAttribute="height" secondItem="7zO-bQ-lBI" secondAttribute="height" id="RJ0-La-TCF"/>
                             <constraint firstItem="7pv-QL-twf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="YFg-2K-jgU"/>
                             <constraint firstItem="7zO-bQ-lBI" firstAttribute="top" secondItem="7pv-QL-twf" secondAttribute="bottom" constant="30" id="ZzY-gJ-fuQ"/>
                             <constraint firstItem="EEq-MZ-sFL" firstAttribute="centerX" secondItem="7zO-bQ-lBI" secondAttribute="centerX" id="omv-ui-K9O"/>
                             <constraint firstItem="7pv-QL-twf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rjO-56-csO"/>
+                            <constraint firstItem="7zO-bQ-lBI" firstAttribute="height" secondItem="7pv-QL-twf" secondAttribute="height" id="yQt-1K-FEf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

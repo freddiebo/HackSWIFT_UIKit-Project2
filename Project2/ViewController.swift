@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         scoreLable.text = "Your score: \(score)"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(showScore))
         Button1.layer.borderWidth = 1
         Button1.layer.borderColor = UIColor.lightGray.cgColor
         
@@ -76,6 +78,12 @@ class ViewController: UIViewController {
             numQuest += 1
             askQuestion()
         }
+    }
+    
+    @objc func showScore() {
+        let vc = UIAlertController(title: "Info", message: "Your score is \(score).", preferredStyle: .alert)
+        vc.addAction(UIAlertAction(title: "Close", style: .cancel))
+        present(vc, animated: true)
     }
 }
 
